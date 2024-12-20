@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuliner Jogja - Contact</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Styling untuk section kontak */
+        .contact {
+            padding: 100px 0 50px; /* Memberikan ruang dari header yang fixed */
+            background-image: url('jogja.jpg'); /* Ganti dengan path gambar Anda */
+            background-size: cover;
+            background-position: center;
+            color: white; /* Menyesuaikan warna teks agar kontras dengan latar belakang gambar */
+        }
+
+        .contact h1 {
+            font-size: 2.5em;
+            color: #fff; /* Teks berwarna putih agar kontras */
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            color: #fff; /* Teks berwarna putih agar kontras */
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .contact-info {
+            background-color: rgba(0, 0, 0, 0.5); /* Latar belakang transparan hitam untuk kontras */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            margin-bottom: 40px;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+            color: #fff; /* Teks berwarna putih agar kontras */
+            margin: 10px 0;
+        }
+
+        .contact-info strong {
+            color: #ffcc00; /* Warna highlight untuk label */
+        }
+
+        /* Styling untuk Form Kontak */
+        #contact-form {
+            background-color: rgba(0, 0, 0, 0.8); /* Latar belakang hitam transparan */
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Bayangan untuk efek 3D */
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        #contact-form label {
+            font-size: 1.1em;
+            color: #fff; /* Teks label berwarna putih */
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        #contact-form input, #contact-form textarea {
+            width: 100%;
+            padding: 12px;
+            margin-bottom: 20px;
+            border: 1px solid #555; /* Warna abu-abu untuk border */
+            border-radius: 8px;
+            font-size: 1em;
+            color: #fff; /* Teks putih */
+            background-color: rgba(0, 0, 0, 0.6); /* Latar belakang hitam transparan */
+        }
+
+        #contact-form input:focus, #contact-form textarea:focus {
+            border-color: #ffcc00; /* Warna emas saat fokus */
+            outline: none;
+            box-shadow: 0 0 5px #ffcc00;
+        }
+
+        #contact-form button {
+            background-color: #ffcc00;
+            color: black;
+            font-size: 1.2em;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        #contact-form button:hover {
+            background-color: #e6b800;
+            transform: scale(1.05); /* Efek membesar saat hover */
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="logo">Kuliner Jogja</div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="restaurants.html">Restaurants</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section class="contact">
+        <div class="container">
+            <h1>Contact Us</h1>
+            <p>Thank you for visiting Kuliner Jogja. If you have any questions or would like to share your experience, feel free to contact us through the information below.</p>
+
+            <div class="contact-info">
+                <p><strong>Address:</strong> Jalan Malioboro, Yogyakarta, Indonesia</p>
+                <p><strong>Phone:</strong> +62 812 3456 7890</p>
+                <p><strong>Email:</strong> contact@kulinerjogja.com</p>
+            </div>
+
+            <form id="contact-form">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" required>
+            
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Your Email" required>
+            
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" placeholder="Your Message" required></textarea>
+            
+                <button type="submit">Submit</button>
+            </form>            
+        </div>
+    </section>
+    <script src="scripts.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+</body>
+</html>
